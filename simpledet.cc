@@ -56,10 +56,12 @@ int main(int argc, char** argv)
 
 //  G4VisManager* visManager = new G4VisExecutive;
 //  visManager->Initialize();
+  G4cout << "Start run "<< jobId << " 1e6 neutrons" << G4endl;
 
   // interactive mode
-  G4UImanager::GetUIpointer()->ApplyCommand("/run/beamOn 1000000");
+  G4UImanager::GetUIpointer()->ApplyCommand("/run/beamOn 10000000");
 //  ui->SessionStart();
+  G4cout << "End of run" << G4endl;
 
 //  delete ui;
 //  delete visManager;
