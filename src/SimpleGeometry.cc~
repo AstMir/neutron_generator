@@ -181,7 +181,7 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
       new G4LogicalVolume(detector, Air, "Detector");
 	/*/
    for(int j = 0; j < 13;j++){
-   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (-352.5+62.5)*cm, (271.5-5.-70.-i*50.)*cm),
+   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (-352.5+125)*cm, (271.5-5.-70.-i*50.)*cm),
                      Detectorlv, "Detector",
   						airlv, false, i+j*10, checkOverlaps);
 	   };
@@ -189,40 +189,40 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
 
 
   for(int j = 0; j < 13;j++){
-    for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((121.5+50.*j)*cm, (-352.5+62.5)*cm, (271.5-5.-70.-i*50.)*cm),
+    for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((121.5+50.*j)*cm, (-352.5+125)*cm, (271.5-5.-70.-i*50.)*cm),
                      Detectorlv, "Detector",
 						airlv, false,130+i+j*10, checkOverlaps);
 	   };
   };
 
-     for(int i = 0; i < 29;i++) {new G4PVPlacement(0, G4ThreeVector((-705.+50.*i)*cm, (-352.5+49+62.5)*cm, (451.5+10.)*cm),
+     for(int i = 0; i < 29;i++) {new G4PVPlacement(0, G4ThreeVector((-705.+50.*i)*cm, (-352.5+49+125)*cm, (451.5+10.)*cm),
                      Detectorlv, "Detector",
 						worldlv, false,260+i, checkOverlaps);
 	   };
 
-     for(int i = 0; i < 29;i++) {new G4PVPlacement(0, G4ThreeVector((-705.+50.*i)*cm, (-352.5+49.+62.5)*cm, (-451.5-80.)*cm),
+     for(int i = 0; i < 29;i++) {new G4PVPlacement(0, G4ThreeVector((-705.+50.*i)*cm, (-352.5+49.+125)*cm, (-451.5-80.)*cm),
                      Detectorlv, "Detector",
 						worldlv, false,290+i, checkOverlaps);
 	   };
 
-     for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-931.5-80.)*cm, (-352.5+49.+62.5)*cm, (271.5+20-5-70-i*50.)*cm),
+     for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-931.5-80.)*cm, (-352.5+49.+125)*cm, (271.5+20-5-70-i*50.)*cm),
                      Detectorlv, "Detector",
   						worldlv, false, 320+i, checkOverlaps);
 	   };
-     for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((931.5+10.)*cm, (-352.5+49.+62.5)*cm, (271.5+20-5-70-i*50.)*cm),
+     for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((931.5+10.)*cm, (-352.5+49.+125)*cm, (271.5+20-5-70-i*50.)*cm),
                      Detectorlv, "Detector",
   						worldlv, false, 330+i, checkOverlaps);
      };
 	      
    for(int j = 0; j < 13;j++){
-   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (-352.5+62.5+267.)*cm, (271.5-5.-70.-i*50.)*cm),
+   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (-352.5+125+267.)*cm, (271.5-5.-70.-i*50.)*cm),
                      Detectorlv, "Detector",
   						airlv, false,340+i+j*10, checkOverlaps);
 	   };
    };
 
    for(int j = 0; j < 29;j++){
-   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (467.5+62.5+5.)*cm, (271.5-5.-70.-i*50.)*cm),
+   for(int i = 0; i < 8;i++) {new G4PVPlacement(0, G4ThreeVector((-731.5+70.+5.+50.*j)*cm, (467.5+125+5.)*cm, (271.5-5.-70.-i*50.)*cm),
                      Detectorlv, "Detector",
   						worldlv, false,470+i+j*10, checkOverlaps);
 	   };
